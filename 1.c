@@ -1,3 +1,5 @@
 #include <stdio.h>
 #include <stdbool.h>
-#include "calculation.h" // Assuming calculation logic is in calculation.h`
+#include <string.h>
+bool get_validated_input(float *weight, float *height);
+
