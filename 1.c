@@ -10,7 +10,10 @@ int main() {
     // Input height in meters
     printf("Enter your height in meters: ");
     scanf("%f", &height);
- // Check for valid height
+
+    // Check for valid height
     if (height <= 0) {
         printf("Height must be greater than zero.\n");
+        return 1;
+    }
 
