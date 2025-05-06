@@ -1,5 +1,7 @@
 #include <stdio.h>
-#include <stdbool.h>
-#include <string.h>
-bool get_validated_input(float *weight, float *height);
 
+int main() {
+    float weight, height, bmi;
+
+    // Input weight in kilograms
+    printf("Enter your weight in kilograms: ");
