@@ -15,3 +15,8 @@ typedef struct {
 } BMI_Record;
 
 
+// Global array to store records
+BMI_Record history[MAX_USERS];
+int recordCount = 0;
+
+
