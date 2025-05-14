@@ -20,3 +20,17 @@ BMI_Record history[MAX_USERS];
 int recordCount = 0;
 
 
+
+// Function declarations
+void showMenu();
+void calculateBMI();
+void showHistory();
+float computeBMI(float weight, float height);
+void getBMICategory(float bmi, char *category);
+void clearInputBuffer();
+void pause();
+
+int main() {
+    int choice;
+
+
