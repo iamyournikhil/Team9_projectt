@@ -42,5 +42,8 @@ int main() {
             case 1:
                 calculateBMI();
                 break;
-
+	    
+	    case 2:
+               showHistory();
+               break
 
