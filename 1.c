@@ -46,4 +46,11 @@ int main() {
 	    case 2:
                showHistory();
                break
+            
+	    case 3:
+                printf("Exiting the program. Goodbye!\n");
+                break;
+            default:
+                printf("Invalid choice. Please enter 1-3.\n");
+        }
 
