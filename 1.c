@@ -32,5 +32,15 @@ void pause();
 
 int main() {
     int choice;
+    do {
+        showMenu();
+        printf("Enter your choice: ");
+        scanf("%d", &choice);
+        clearInputBuffer();
+
+        switch (choice) {
+            case 1:
+                calculateBMI();
+                break;
 
 
