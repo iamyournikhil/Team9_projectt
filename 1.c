@@ -1,5 +1,7 @@
-// bmi.h
-#ifndef BMI_H
-#define BMI_H
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#define MAX_USERS 100
 
 
