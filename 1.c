@@ -53,4 +53,11 @@ int main() {
             default:
                 printf("Invalid choice. Please enter 1-3.\n");
         }
+         if (choice != 3)
+            pause();
+
+    } while (choice != 3);
+
+    return 0;
+}
 
