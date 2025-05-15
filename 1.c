@@ -16,4 +16,19 @@ void calculateBMI() {
     float height = 0, weight = 0, bmi = 0;
     char category[20], unit[10];
 
+     if (recordCount >= MAX_USERS) {
+        printf("History is full. Cannot record more entries.\n");
+        return;
+    }
+
+    printf("Enter your name: ");
+    fgets(name, sizeof(name), stdin);
+    name[strcspn(name, "\n")] = '\0'; // remove newline
+
+    printf("Choose unit system:\n");
+    printf("1. Metric (kg, meters)\n");
+    printf("2. Imperial (lbs, inches)\n");
+    printf("Enter your choice: ");
+    scanf("%d", &unitChoice);
+    clearInputBuffer();
 
