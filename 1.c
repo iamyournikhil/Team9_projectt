@@ -9,4 +9,11 @@ void showMenu() {
     printf("==============================\n");
 }
 
+// Function to perform BMI calculation
+void calculateBMI() {
+    char name[50];
+    int unitChoice;
+    float height = 0, weight = 0, bmi = 0;
+    char category[20], unit[10];
+
 
