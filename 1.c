@@ -1,19 +1,12 @@
-#include <stdio.h>
+// Function to display the main menu
+void showMenu() {
+    printf("\n==============================\n");
+    printf("        BMI CALCULATOR\n");
+    printf("==============================\n");
+    printf("1. Calculate BMI\n");
+    printf("2. Show History\n");
+    printf("3. Exit\n");
+    printf("==============================\n");
+}
 
-int main() {
-    float weight, height, bmi;
-
-    // Input weight in kilograms
-    printf("Enter your weight in kilograms: ");
-    scanf("%f", &weight);
-
-    // Input height in meters
-    printf("Enter your height in meters: ");
-    scanf("%f", &height);
-
-    // Check for valid height
-    if (height <= 0) {
-        printf("Height must be greater than zero.\n");
-        return 1;
-    }
 
