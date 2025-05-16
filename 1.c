@@ -31,4 +31,10 @@ void calculateBMI() {
     printf("Enter your choice: ");
     scanf("%d", &unitChoice);
     clearInputBuffer();
-
+    
+    if (unitChoice == 1) {
+        printf("Enter your height in meters: ");
+        scanf("%f", &height);
+        printf("Enter your weight in kilograms: ");
+        scanf("%f", &weight);
+        strcpy(unit, "Metric");
