@@ -38,3 +38,14 @@ void calculateBMI() {
         printf("Enter your weight in kilograms: ");
         scanf("%f", &weight);
         strcpy(unit, "Metric");
+      } else if (unitChoice == 2) {
+        printf("Enter your height in inches: ");
+        scanf("%f", &height);
+        printf("Enter your weight in pounds: ");
+        scanf("%f", &weight);
+        strcpy(unit, "Imperial");
+    } else {
+        printf("Invalid unit choice. Aborting calculation.\n");
+        return;
+    }
+
