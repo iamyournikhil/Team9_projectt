@@ -48,4 +48,16 @@ void calculateBMI() {
         printf("Invalid unit choice. Aborting calculation.\n");
         return;
     }
+     clearInputBuffer();
+
+    if (height <= 0 || weight <= 0) {
+        printf("Invalid height or weight. Must be positive numbers.\n");
+        return;
+    }
+
+    if (unitChoice == 2) {
+        // Convert imperial to metric
+        height = height * 0.0254;     // inches to meters
+        weight = weight * 0.453592;   // pounds to kilograms
+    }
 
