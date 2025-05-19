@@ -24,5 +24,17 @@ float computeBMI(float weight, float height) {
     return weight / (height * height);
 }
 
+// Function to determine BMI category
+void getBMICategory(float bmi, char *category) {
+    if (bmi < 18.5)
+        strcpy(category, "Underweight");
+    else if (bmi < 24.9)
+        strcpy(category, "Normal");
+    else if (bmi < 29.9)
+        strcpy(category, "Overweight");
+    else
+        strcpy(category, "Obese");
+}
+
 
 
