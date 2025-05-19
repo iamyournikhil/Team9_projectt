@@ -19,4 +19,10 @@
     recordCount++;
 }
 
+// Function to compute BMI
+float computeBMI(float weight, float height) {
+    return weight / (height * height);
+}
+
+
 
