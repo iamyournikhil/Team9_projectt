@@ -9,5 +9,14 @@
     printf("Category: %s\n", category);
     printf("=======================\n");
 
+    // Store the record
+    strcpy(history[recordCount].name, name);
+    history[recordCount].height = height;
+    history[recordCount].weight = weight;
+    history[recordCount].bmi = bmi;
+    strcpy(history[recordCount].category, category);
+    strcpy(history[recordCount].unit, unit);
+    recordCount++;
+}
 
 
