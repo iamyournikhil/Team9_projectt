@@ -61,6 +61,10 @@ void clearInputBuffer() {
     int c;
     while ((c = getchar()) != '\n' && c != EOF);
 }
-
+// Utility function to pause screen
+void pause() {
+    printf("Press Enter to continue...");
+    getchar();
+}
 
 
