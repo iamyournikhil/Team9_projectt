@@ -36,5 +36,26 @@ void getBMICategory(float bmi, char *category) {
         strcpy(category, "Obese");
 }
 
+// Function to show BMI history
+void showHistory() {
+    if (recordCount == 0) {
+        printf("No records found.\n");
+        return;
+    }
+
+    printf("\n=========== BMI HISTORY ===========\n");
+    for (int i = 0; i < recordCount; i++) {
+        printf("Record #%d\n", i + 1);
+        printf("Name     : %s\n", history[i].name);
+        printf("Unit     : %s\n", history[i].unit);
+        printf("Height   : %.2f m\n", history[i].height);
+        printf("Weight   : %.2f kg\n", history[i].weight);
+        printf("BMI      : %.2f\n", history[i].bmi);
+        printf("Category : %s\n", history[i].category);
+        printf("-----------------------------------\n");
+    }
+}
+
+
 
 
