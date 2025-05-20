@@ -56,6 +56,11 @@ void showHistory() {
     }
 }
 
+// Utility function to clear input buffer
+void clearInputBuffer() {
+    int c;
+    while ((c = getchar()) != '\n' && c != EOF);
+}
 
 
 
