@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -126,4 +127,76 @@ void calculateBMI() {
         weight = weight * 0.453592;   // pounds to kilograms
     }
 
+
+
+     bmi = computeBMI(weight, height);
+    getBMICategory(bmi, category);
+
+    printf("\n===== BMI RESULT =====\n");
+    printf("Name: %s\n", name);
+    printf("Height: %.2f m\n", height);
+    printf("Weight: %.2f kg\n", weight);
+    printf("BMI: %.2f\n", bmi);
+    printf("Category: %s\n", category);
+    printf("=======================\n");
+
+    // Store the record
+    strcpy(history[recordCount].name, name);
+    history[recordCount].height = height;
+    history[recordCount].weight = weight;
+    history[recordCount].bmi = bmi;
+    strcpy(history[recordCount].category, category);
+    strcpy(history[recordCount].unit, unit);
+    recordCount++;
+}
+
+// Function to compute BMI
+float computeBMI(float weight, float height) {
+    return weight / (height * height);
+}
+
+// Function to determine BMI category
+void getBMICategory(float bmi, char *category) {
+    if (bmi < 18.5)
+        strcpy(category, "Underweight");
+    else if (bmi < 24.9)
+        strcpy(category, "Normal");
+    else if (bmi < 29.9)
+        strcpy(category, "Overweight");
+    else
+        strcpy(category, "Obese");
+}
+
+// Function to show BMI history
+void showHistory() {
+    if (recordCount == 0) {
+        printf("No records found.\n");
+        return;
+    }
+
+    printf("\n=========== BMI HISTORY ===========\n");
+    for (int i = 0; i < recordCount; i++) {
+        printf("Record #%d\n", i + 1);
+        printf("Name     : %s\n", history[i].name);
+        printf("Unit     : %s\n", history[i].unit);
+        printf("Height   : %.2f m\n", history[i].height);
+        printf("Weight   : %.2f kg\n", history[i].weight);
+        printf("BMI      : %.2f\n", history[i].bmi);
+        printf("Category : %s\n", history[i].category);
+        printf("-----------------------------------\n");
+    }
+}
+
+// Utility function to clear input buffer
+void clearInputBuffer() {
+    int c;
+    while ((c = getchar()) != '\n' && c != EOF);
+}
+// Utility function to pause screen
+void pause() {
+    printf("Press Enter to continue...");
+    getchar();
+}
+
+// done with the project
 
